@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minnie's Bakery</title>
+</head>
+<body>
+    
+    <header>
+    <h1>Welcome to Minnie's Bakery</h1>
+    <p>We're more than just a bakery but a place for friends and neighbours to connect over delicious food. We've been baking all morning and everything is ready. Enjoy!!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Minnie's Bakery, we are passionate about creating delicious pastries and cakes that bring joy with every bite. Our love for baking has been passed down through generations and we've honoured our skills to bring delightful treats. We use the freshest ingredients to ensure the highest quality in every bite.</p>
+        </section>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <ul>
+                <li>Croissants</li>
+                <li>custom design cakes</li>
+                <li>Apple Pie</li>
+                <li>freshly baked bread</li>
+                <li>Cookies</li>
+            </ul>
+        </section>
+        <section id="price-list">
+           <h2>price list</h2>
+           <table>border="1"cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Croissants</td>
+                        <td>1</td>
+                        <td>Ksh 200</td>
+                    </tr>
+                    <tr>
+                        <td>custom design cakes</td>
+                        <td>1</td>
+                        <td>Ksh 1500</td>
+                    </tr>
+                    <tr>
+                        <td>Apple pie</td>
+                        <td>1</td>
+                        <td>Ksh 300</td>
+                    </tr>
+                    <tr>
+                        <td>freshly baked bread</td>
+                        <td>1 loaf</td>
+                        <td>Ksh 100</td>
+                    </tr>
+                    <tr>
+                        <td>Cookies</td>
+                        <td>1 box</td>
+                        <td>Ksh 300</td>
+                    </tr>
+                </tbody>
+                </table>
+        </section>
+        <section>
+            <h2>Bakery gallery</h2>
+            <ul>
+                <li><img src="https://www.pexels.com/photo/close-up-photo-of-croissant-3892469/" alt="Croissant" width="100" height="100"></li>
+                <li><img src="https://www.pexels.com/photo/white-icing-cover-cake-1702373/" alt="Custom Design Cake" width="100" height="100"></li>
+                <li><img src="https://www.pexels.com/photo/cup-of-coffee-and-cookies-on-table-189537/" alt="Coffee and Cookies" width="100" height="100"></li>
+            </ul>
+        </section>
+                <section id="order-form">
+                    <h2>Place Your Order</h2>
+                    <form action="submit_order.php" method="post">
+                        <fieldset>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required><br><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Order Details</legend>
+
+                        <label for="order">Order Details:</label>
+                        <select id="order" name="order" rows="4" required>
+                            <option value="croissant">Croissant</option>
+                            <option value="custom_cake">Custom Design Cake</option>
+                            <option value="fresh_bread">Freshly Baked Bread</option>
+                            <option value="cookies">Cookies</option>
+                        </select><br><br>
+
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+                        <label for="date">Preferred Delivery Date:</label>
+                        <input type="date" id="date" name="date" required><br><br>
+                        </fieldset>
+
+                        <fieldset>
+                        <legend>Payment Method</legend>
+                        <label for="payment">Payment Method:</label>
+                        <select id="payment" name="payment" required>
+                            <option value="credit_card">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="bank_transfer">Bank Transfer</option>
+
+                        </select>
+                        </fieldset>
+
+
+                        <input type="submit" value="Submit Order">
+                    </form>
+            </ul>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>You can reach us via:</p>
+            <ul>
+                <li>Email: info@minniesbakery.com</li>
+                <li>Phone: +254 700 000 000</li>
+                <li>Address: 123 Bakery Lane, Nairobi, Kenya</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Minnie's Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+</html>
